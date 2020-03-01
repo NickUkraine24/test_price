@@ -525,10 +525,8 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <form id="form160940210" name='form160940210' role="form" action='#' method='POST'
-                                          data-formactiontype="0" data-inputbox=".t-input-group"
-                                          class="t-form js-form-proccess t-form_inputs-total_3 "
-                                          data-success-callback="t720_onSuccess"> <!-- NO ONE SERVICES CONNECTED -->
+                                    <form id="form160940210" name='form160940210' role="form" action='.' method='POST'>
+                                        {% csrf_token %}
                                         <div class="js-successbox t-form__successbox t-text t-text_md"
                                              style="display:none;"></div>
                                         <div class="t-form__inputsbox">
@@ -552,11 +550,9 @@
                                             </div>
                                             <div class="t-input-group t-input-group_ph" data-input-lid="1509715118955">
                                                 <div class="t-input-block"><input type="tel" name="Phone"
-                                                                                  class="t-input js-tilda-rule js-tilda-mask "
-                                                                                  value="" placeholder="Телефон"
-                                                                                  data-tilda-rule="phone"
-                                                                                  pattern="[0-9]*"
-                                                                                  data-tilda-mask="+7 (999) 999-9999"
+                                                                                  class="t-input js-tilda-rule "
+                                                                                  value="" placeholder="+79999999999"
+                                                                                  pattern="^((\+7|7|8)+([0-9]){10})$"
                                                                                   style="color:#ffffff; border:1px solid #ffffff; ">
                                                     <div class="t-input-error"></div>
                                                 </div>
@@ -576,10 +572,9 @@
                                                 </div>
                                             </div>
                                             <div class="t-form__submit">
-                                                <button type="submit" class="t-submit"
-                                                        style="color:#ffffff;background-color:#f5914f;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;">
-                                                    Отправить
-                                                </button>
+                                                <input type="submit" class="t-submit"
+                                                        style="color:#ffffff;background-color:#f5914f;border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;"
+                                                        value="Отправить">
                                             </div>
                                         </div>
                                         <div class="t-form__errorbox-bottom">
